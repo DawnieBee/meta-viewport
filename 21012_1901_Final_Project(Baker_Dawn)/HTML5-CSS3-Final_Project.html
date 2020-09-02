@@ -1,0 +1,233 @@
+<!doctype html>
+<!--
+//////////////////////////////////////////
+//                                      //
+//        Advanced HTML5/CSS3           //
+//      Final Project by Dawn Baker     //
+//        Instructor Brent Scott        //
+//                                      //
+////////////////////////////////////////// 
+-->
+<html lang="en">
+  <head>
+    <title>Final Project Advanced HTML5/CSS3</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+/*
+//////////////////////////////////////////
+//                                      //
+//        Advanced HTML5/CSS3           //
+//      Final Project by Dawn Baker     //
+//        Instructor Brent Scott        //
+//                                      //
+////////////////////////////////////////// 
+*/
+      * {
+        box-sizing: border-box;
+      }
+      body{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        margin-top: 1px;
+      }
+      #wrapper{
+        max-width: 960px;
+        background-color: #fff;
+        margin: 0 auto;
+        box-sizing: border-box;
+        min-height: auto;
+        position: relative;
+        box-sizing: border-box;
+        border-radius: 0 0 5px 5px;
+      } 
+      .boxshadow{
+        box-shadow: 3px 3px rgba(0,0,0,.5);
+      }
+      #imagecontainer{
+        max-width: 100%;
+        position: relative;
+        margin-bottom: -3px;
+        
+      }
+      .image_text{
+        position: absolute;
+        top: 2px;
+        left: 25px;
+        color: #000;
+      }
+      #imagecontainer img{
+        max-width: 100%;
+        height: auto;
+        box-shadow: 3px 0 rgba(0,0,0,.5);
+      }
+      h1{
+        font-size: 3em;
+      }
+      
+      .navbar {
+        width: 100%;
+        overflow: auto;
+        text-decoration: none;
+        margin: -4px 0 1px 0;
+        border-radius: 0 0 5px 5px;
+      }
+      .navbar a {
+        float: left;
+        padding: 10px;
+        color: #fff;
+        font-size: 17px;
+        width: 25%; /* Four links of equal widths */
+        text-align: center;
+        text-decoration: none;
+        background-color: #333;
+      }
+      .navbar a:hover {
+        background-color: #eee;
+        color: #000;
+      }
+      nav{
+        display: inline-block;
+      }
+      section{
+        padding: 0 5px 0 5px;
+      }
+      #logo{
+        width: 100%;
+        align-content: center;
+      }
+      footer{
+        margin-bottom: 0;
+      }
+      /*   media query for desktop shows light red  */
+      @media screen and (min-width: 768px){
+        #wrapper{
+          width: 100%;
+          background-color: #f77;
+        }
+      }
+      /*    media query for ipad shows light blue background  */
+      @media screen and (device-width: 768px){
+        #wrapper{
+          width: 100%;
+          background-color: #bef;
+        }
+      }
+      
+      /*   media query for mobile 767px or less shows light green  */
+      @media screen and (max-width: 767px){
+        #wrapper{
+        width: 100%;
+        background-color: #cfc;
+        }
+        h1, h2, p{
+          font-size: 1em;
+        }
+      }
+      /*   media query for logo resize on mobile */
+      @media screen and (max-width: 767px){
+        #logo img{
+          width: 138px;
+          height: 169px;
+        }
+      }
+      @media screen and (max-width: 767px){
+        .navbar a{
+          float: none;
+          display: block;
+          width: 100%;
+          text-align: left;
+        }
+      }
+      
+    </style>
+    <!--[if ie]>
+      <script src="old_ie.js"></script>
+      <style type="text/css">
+        header,
+        nav, 
+        section,
+        footer{
+        display: block;
+        }
+        #wrapper{
+          background-color: #f77;
+        }
+        .navbar a{
+          display: block;
+          text-align: left;
+          width: 125px;
+        } 
+        a{
+          text-decoration: none;
+          align-content: center;
+          border: 1px solid #000;
+          margin: 10px;
+          padding: 1px;
+          font-size: 17px;
+          color: #000;
+        }
+      </style>      
+    <![endif]-->
+  </head> 
+  
+  <body>
+  
+    <!--[if ie]><br>
+      <div id="ie_warning">This page will not display properly in IE9 or lower, Please update your browser</div><br>
+    <![endif] -->
+    <div id="wrapper" class="boxshadow">
+      <header>
+        <div id="imagecontainer">
+          <img src="big_bg_honeycomb.jpg" width="960" height="366" alt="Honeycomb on a Blue Background" />
+          <h1 class="image_text">Bees in Flowers</h1>
+        </div>
+        
+      </header>
+      <nav class="navbar boxshadow">
+        <a class="active" href="#">Home</a>
+          <a class="active" href="#">About</a>
+          <a class="active" href="#">Portfolio</a>
+          <a class="active" href="#">Contact Us</a>
+      </nav>
+      
+      <section>
+      <h2>Responsive Website with Logo</h2>
+        <div id="logo">
+          <picture>
+            <source media="(min-width: 768px)" srcset="bee-logo.png" />
+            <source media="(min-width: 767px)" srcset="bee-logo-half.png 1x, bee-logo.png 2x" />
+            <img src="bee-logo.png" width="276" height="338" alt="Bee Logo Full Size" />
+          </picture>
+          
+          <div class="paragraph">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, voluptatem, doloremque! Beatae 
+            placeat reiciendis, nesciunt, mollitia dolorum autem nostrum inventore nulla corrupti corporis iusto 
+            impedit quisquam, minus quam debitis culpa!</p>
+            <p>In adipisci, aspernatur dolorem, vitae necessitatibus aliquam impedit incidunt voluptate dolores 
+            laboriosam, tempore! Mollitia enim minima consectetur fuga facere, velit vero? Eligendi quibusdam porro 
+            corporis quisquam expedita voluptates quam, esse!</p>  
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, voluptatem, doloremque! Beatae 
+            placeat reiciendis, nesciunt, mollitia dolorum autem nostrum inventore nulla corrupti corporis iusto 
+            impedit quisquam, minus quam debitis culpa!</p>
+            <p>In adipisci, aspernatur dolorem, vitae necessitatibus aliquam impedit incidunt voluptate dolores 
+            laboriosam, tempore! Mollitia enim minima consectetur fuga facere, velit vero? Eligendi quibusdam porro 
+            corporis quisquam expedita voluptates quam, esse!</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, voluptatem, doloremque! Beatae 
+            placeat reiciendis, nesciunt, mollitia dolorum autem nostrum inventore nulla corrupti corporis iusto 
+            impedit quisquam, minus quam debitis culpa!</p>
+            <p>In adipisci, aspernatur dolorem, vitae necessitatibus aliquam impedit incidunt voluptate dolores 
+            laboriosam, tempore! Mollitia enim minima consectetur fuga facere, velit vero? Eligendi quibusdam porro 
+            corporis quisquam expedita voluptates quam, esse!</p>
+          </div>
+          
+        </div>
+      </section>
+      <footer class="navbar">
+        <a class="active" href="#">Home</a>
+        <a class="active" href="#">About</a>
+        <a class="active" href="#">Portfolio</a>
+        <a class="active" href="#">Contact Us</a>
+      </footer>
+    </div>
+  </body>
+</html>
